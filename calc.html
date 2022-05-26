@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: teal;
+        }
+        #calculator {
+            border: 1px solid transparent;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+            width: 28%;
+            height: 500px;
+            margin: auto;
+        }
+        #display {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            width: 80%;
+            height: 15%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #buttons {          
+            width: 80%;
+            height: 70%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,20%);
+            gap: 20px;
+            
+        }
+        #buttons > div {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 27px;
+
+        }
+        .black {
+            background-color: black;
+            color: white;
+        }
+        .red {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="calculator">
+        <div id="display"></div>
+        <div id="buttons">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="black">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="black">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="black">x</div>
+            <div class="red">C</div>
+            <div>0</div>
+            <div class="black">=</div>
+            <div class="black">/</div>
+        </div>
+    </div>
+</body>
+</html>
